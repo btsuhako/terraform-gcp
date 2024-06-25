@@ -32,3 +32,4 @@ The `Makefile` drives the initial configuration. At a high-level it does the fol
 - Need to figure out how to use the project factory module with a personal GCP account. I've used this module before in a workgroup, and minimal configuration is needed in that context.
 - Instead of using `var.project_id` as a variable to pass around, use something like Terragrunt to template out `provider.tf` files with the project_id configuration. That way the variable won't be copy/pasted around. Similar pattern with the AWS Account ID and Terraform.
 - Use something like Dotenv to source environment variables into the `Makefile`
+- Terraform state could be persisted to remote storage. With the project factory module, it can create a project bucket, which could be used to store the Terraform remote state within the project.
