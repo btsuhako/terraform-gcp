@@ -1,7 +1,7 @@
-BILLING_ACCOUNT = 015E58-0C8B12-15FD49
+BILLING_ACCOUNT = ""
 GKE_CLUSTER_NAME = "gke-01"
-PROJECT_ID = btsuhako-12
-TFVARS_FILE = terraform.tfvars
+PROJECT_ID = ""
+TFVARS_FILE = "terraform.tfvars"
 VPC_SUBNET_REGION = "us-west1"
 
 all: install login configure init apply kubeconfig
