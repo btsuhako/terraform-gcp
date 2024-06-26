@@ -1,0 +1,3 @@
+brew "tfenv"
+brew "kubernetes-cli"
+cask "google-cloud-sdk"
